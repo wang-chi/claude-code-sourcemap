@@ -29,5 +29,5 @@ jobs:
           MYCODER_AFS_API_KEY: ${{ secrets.MYCODER_AFS_API_KEY }}
           MYCODER_AFS_API_URL: ${{ secrets.MYCODER_AFS_API_URL }}
         with:
-          model: mycoder/mycoderModel/openrouter-glm-5.3-flash
+          model: ${{ secrets.MYCODER_MODEL }}
           use_github_token: true
